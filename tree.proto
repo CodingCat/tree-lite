@@ -1,1 +1,21 @@
+package tree-lit
 
+message Model {
+  repeated Tree tree = 1;
+}
+
+message Tree {  
+  required Node head = 1;
+}
+
+message Node {
+   optional Node parant = 1; // is root if missing
+   repeated Node childern = 2; // is leaf if no child
+   optional float value = 3; // leaf value
+   optional Operation op = 4; // valid for non-leaf node
+}
+
+enum Operation {
+   LE = 1;
+   GE = 2;
+}
