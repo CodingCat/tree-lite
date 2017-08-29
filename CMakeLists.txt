@@ -1,4 +1,8 @@
 cmake_minimum_required (VERSION 3.1)
+
+set(CMAKE_CXX_COMPILER /Users/nanzhu/code/clang+llvm-4.0.1-x86_64/bin/clang++)
+set(CMAKE_C_COMPILER /Users/nanzhu/code/clang+llvm-4.0.1-x86_64/bin/clang)
+
 project(treelite)
 include(cmake/Utils.cmake)
 find_package(OpenMP)
