@@ -45,3 +45,6 @@ treelite
 
 # Project files
 *.pyproj
+
+.idea
+cmake-build-debug
